@@ -1,0 +1,667 @@
+/* russo-one-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/russo-one-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/russo-one-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* ruslan-display-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ruslan Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* archivo-black-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/archivo-black-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/archivo-black-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/archivo-black-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/archivo-black-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/archivo-black-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/archivo-black-v17-latin-regular.svg#ArchivoBlack') format('svg'); /* Legacy iOS */
+}
+
+  html{
+    box-sizing: border-box;
+  }
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Russo One';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal; 
+    color: white;
+}
+
+.wrapper{
+    max-width: 2900px;
+    margin: 0 auto;
+}
+
+/*Header style start */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-right: 60px;
+    
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 82px;
+   
+}
+
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    font-size: 20px;
+    line-height: 70px;
+    color: white;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.header__link:hover,.header__link:focus,.header__link:active{
+    opacity: .80;
+}
+
+
+.header_fixed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    animation-name: show_header;
+    animation-duration: 0.5s;
+}
+
+@keyframes show_header{
+    0%{
+    opacity: 0;
+    top: -70%;
+    }
+    100%{
+    opacity: 1;
+    top: 0;
+    }
+    
+    
+}
+
+/*Header style end */
+
+
+/*intro style start */
+
+
+
+.intro{
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgb(23, 9, 37), rgb(0, 0, 0));;
+    background-size: cover;
+    padding-top: 150px;
+    
+}
+
+
+
+
+/*intro style end */
+
+
+
+
+/*footer_stile start*/
+.footer{
+    background: black;
+    padding: 5px 0;
+}
+
+.footer__logo{
+    padding-left: 4%;
+    padding-bottom: 0%;
+}
+
+.footer__logo-pic{
+    padding-top: 20px;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo{
+    width: 20%;
+}
+
+.footer__nav{
+    width: 50%;
+    padding-left: 1000px;
+
+}
+
+.footer__menu-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50 px;
+}
+
+.footer__menu-link{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.footer__menu-link:hover,.footer__menu-link:focus,.footer__menu-link:active{
+    opacity: .80;
+}
+
+/*footer_stile end*/
+
+
+.sign__back{
+    background-color: #6d44b8;
+    font-family: 'Russo One';
+    color: azure;
+    size: 200px;
+    margin-top: 6%;
+    padding: 10%;
+    border:  none;
+    display: inline-block; /* Строчно-блочный элемент */
+    transition: .2s ease-in;
+    color: #fff; /* Белый цвет текста */
+    padding: 0.5rem 2rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+}
+
+.sign__back:hover,.sign__back:focus,.sign__back:active{
+    background: #583795;
+}
+
+.blur{
+    filter: blur(0px); /* Размытие */
+    transition: 1s; /* Время перехода */
+    z-index:-1;
+}
+.flex-item {
+                
+                text-align:center;
+                font-size: 1em;
+                padding: 1.5em;
+                color: white;
+                opacity: 0.8;
+            }
+            .conteinCat{
+                text-align: center;
+                margin-top: 50px;
+            }
+.model{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-left: 295px;
+    border-radius: 12px;
+     background-position: center;
+     background-size: cover;
+     align-items: center;
+    justify-content: center;
+        
+}
+
+
+
+/* Start  styling the page 
+.container-audio {
+    width: 130%;
+    
+    
+   
+}
+audio {
+  width:100%;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  
+}
+*/
+
+.conteinCat{
+    border-radius: 12px;
+    /*background-color: rgba(17, 25, 40, 0.25);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid white;*/
+    padding: 30px;  
+    /*flex-direction: column;
+    text-align: center; */
+    transform: scale(1);
+    /*margin: -5px;*/
+    /*margin-right: 40px;
+    margin-top: -400px;*/
+
+    
+  }
+
+
+
+
+
+
+.conteinCat,
+.wrapper2,
+.button-wrapper {
+    left: 200px;
+    top: 280px;
+}
+
+
+
+
+
+
+
+.wrapper2 {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.banner-image {
+  background-image: url(/img/card/8.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.banner-image2{
+    background-image: url(/img/card/9.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+}
+.banner-image3{
+    background-image: url(/img/card/10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+}
+.banner-image4{
+    background-image: url(/img/card/7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+}
+.banner-image5{
+    background-image: url(/img/feedback/2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.banner-image6 {
+    background-image: url(/img/card/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .banner-image7{
+      background-image: url(/img/card/2.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100px;
+      width: 100%;
+      border-radius: 12px;
+  }
+  .banner-image8{
+      background-image: url(/img/card/3.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100px;
+      width: 100%;
+      border-radius: 12px;
+  }
+  .banner-image9{
+      background-image: url(/img/card/4.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100px;
+      width: 100%;
+      border-radius: 12px;
+  }
+  .banner-image10{
+      background-image: url(/img/card/5.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100px;
+      width: 100%;
+      border-radius: 12px;
+  }
+  
+  
+
+
+
+h1{
+  font-family: 'Russo one';
+  color: rgba(255,255,255,0.98);
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-top: 10px;
+  
+}
+
+p{
+  color: #fff;
+  font-family: 'Russo one';
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-wrapper{
+  margin-top: 10px;
+}
+
+.btn-outline,
+.btn-fill {
+  border: none;
+  padding: 6px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+}
+
+
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: all .3s ease;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.btn-fill {
+  background: transparent;
+  color: rgba(255,255,255,0.95);
+  border: 1px solid white;
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+  width: 120px;
+  
+  
+}
+
+.btn-fill:hover{
+  transform: scale(1.125);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}
+
+.btn-outline:hover{
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;  
+}
+
+
+
+.bottommodel{
+    max-width: 1150px;
+    padding: 400px;
+    margin-left: 310px;
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;  
+    position: relative;
+}
+
+
+
+
+h6{
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    font-size: x-large;
+    
+}
+
+.topcard{
+    position: relative;
+    margin-right: 60px;
+    width: 1518px;
+    bottom:  40px;
+    height: 500px;
+    background-size: cover;
+}
+
+.image21{
+  position: absolute;
+  background-size: cover;
+  height: 450px;
+  width: 600px;
+  top: 20px;
+  left: 57px;
+  box-shadow: 0 10px 20px rgba(18, 18, 243, 0.3);
+  filter: brightness(70%);
+  border-radius: 20px;
+}
+
+
+
+
+.Textfortop{
+  position: absolute;
+  font-size: xx-large;
+  left: 890px;  
+  top: 20px;
+  font-family: "Russo one";
+}
+
+
+
+.par{
+  position: absolute;
+  left: 720px;  
+  top: 70px;
+  height: 400px;
+  width: 750px;
+  font-size: x-large;
+}
+
+.par span {
+	padding: 0 5px;
+	background: rgba(10, 24, 121, 0.8);
+}
+
+
+
+.leftcard{
+    position: absolute;
+    padding-bottom: 800px;
+    padding: 155px;
+    padding-top: 1445px;
+}
+
+.leftimg{
+    background-size: cover;
+    position: absolute;
+    height: 450px;
+    bottom: 1150px;
+    right: 0px;
+    transform: rotate(-6.72deg);
+    border-radius: 40px;
+}
+
+
+.leftimg2{
+    position: absolute;
+    height: 450px;
+    bottom: 580px;
+    right: 0px;
+    transform: rotate(10.8deg);
+    border-radius: 40px;
+
+}
+
+.leftimg3{
+    position: absolute;
+    height: 450px;
+    bottom: 10px;
+    left: 0px;
+    transform: rotate(-6.72deg);
+    border-radius: 40px;
+
+}
+
+
+
+
+  
+  .section-heading {
+    
+    text-align: center;
+    font-size: 35px;
+    color: #fafafa;
+    margin: 0 0 70px;
+  }
+  
+  .container6 {
+    display: flex;
+    
+    width: 20%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  
+  .profile {
+    position: relative;
+    transition: all 0.3s;
+    
+  }
+  
+  .profile:hover {
+    transform: translateY(25px);
+  }
+  
+  .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+    
+
+  }
+
+  .profile:not(:first-child) img {
+    margin-left: -20px;
+  }
+  
+  .profile .name {
+    position: absolute;
+    background-color: #51116e;
+    color:  #ffffff;
+   
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -80px; left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color:  #51116e;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .profile img:hover + .name {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(111, 111, 176, 0.3);
+  }
+
+
+
+
+
+

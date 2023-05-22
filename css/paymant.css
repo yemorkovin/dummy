@@ -1,0 +1,81 @@
+/* russo-one-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/russo-one-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/russo-one-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ruslan-display-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ruslan Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/ruslan-display-v22-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* public-sans-regular - latin */
+@font-face {
+font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/public-sans-v14-latin-regular.eot'); /* IE9 Compat Modes */
+src: url('../fonts/public-sans-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/public-sans-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+     url('../fonts/public-sans-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/public-sans-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/public-sans-v14-latin-regular.svg#PublicSans') format('svg'); /* Legacy iOS */
+} 
+
+body{
+font-family: 'Russo one';
+background: #34036c; 
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff); 
+background: linear-gradient(to right, #7312a7, #290740); 
+  /* Thanks to uigradients :) */
+}
+
+.card{
+  background:#16181a;  border-radius:14px; max-width: 300px; display:block; margin:auto;
+  padding:60px; padding-left:20px; padding-right:20px;box-shadow: 2px 10px 40px black; z-index:99;
+}
+
+.logo-card{max-width:50px; margin-bottom:15px; margin-top: -19px;}
+
+label{display:flex; font-size:10px; color:white; opacity:.4;}
+
+input{font-family: 'Work Sans', sans-serif;background:transparent; border:none; border-bottom:1px solid transparent; color:#dbdce0; transition: border-bottom .4s;}
+input:focus{border-bottom:1px solid #1abc9c; outline:none;}
+
+.cardnumber{display:block; font-size:20px; margin-bottom:8px; }
+
+.name{display:block; font-size:15px; max-width: 200px; float:left; margin-bottom:15px;}
+
+.toleft{float:left;}
+.ccv{width:50px; margin-top:-5px; font-size:15px;}
+
+.receipt{background: #dbdce0; border-radius:4px; padding:5%; padding-top:200px; max-width:600px; display:block; margin:auto; margin-top:-180px; z-index:-999; position:relative;}
+
+.col{width:50%; float:left;}
+.bought-item{background:#f5f5f5; padding:2px;}
+.bought-items{margin-top:-3px;}
+
+.cost{color:#3a7bd5;}
+.seller{color: #3a7bd5;}
+.description{font-size: 13px;}
+.price{font-size:12px;}
+.comprobe{text-align:center;}
+.proceed{position:absolute; transform:translate(300px, 10px); width:50px; height:50px; border-radius:50%; background:#1abc9c; border:none;color:white; transition: box-shadow .2s, transform .4s; cursor:pointer;}
+.proceed:active{outline:none; }
+.proceed:focus{outline:none;box-shadow: inset 0px 0px 5px white;}
+.sendicon{filter:invert(100%); padding-top:2px;}
+
+@media (max-width: 600px){
+  .proceed{transform:translate(250px, 10px);}
+  .col{display:block; margin:auto; width:100%; text-align:center;}
+}
